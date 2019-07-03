@@ -29,6 +29,8 @@ else
   colorscheme zenburn
 endif
 
+" No netrwhist file
+:let g:netrw_dirhistmax = 0
 " Use system clipboard by default
 set clipboard=unnamed
 " Enhance command autocompletion
