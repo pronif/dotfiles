@@ -14,7 +14,6 @@ Plugin 'gmarik/Vundle.vim'
 " Python PEP8 indentation
 Plugin 'vim-scripts/indentpython.vim'
 " Color scheme
-Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
@@ -26,7 +25,10 @@ if has('gui_running')
   set background=dark
   colorscheme solarized
 else
-  colorscheme zenburn
+  let g:solarized_termcolors=256
+  let g:solarized_termtrans=1
+  set background=dark
+  colorscheme solarized
 endif
 
 " No netrwhist file
