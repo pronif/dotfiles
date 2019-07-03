@@ -12,3 +12,7 @@ fi
 CMD="ln -sf $PWD/vimrc $HOME/.vimrc"
 echo "$CMD"
 $CMD
+
+CMD="ln -sf $PWD/vim $HOME/.vim"
+echo "$CMD"
+$CMD
