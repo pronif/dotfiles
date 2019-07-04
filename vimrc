@@ -32,8 +32,17 @@ else
   colorscheme solarized
 endif
 
-" Ctrl-n to toggle file navigation
+" Key binding to toggle file navigation
 map <C-n> :NERDTreeToggle<CR>
+
+" Apply clang-format to the whole file
+:function FormatFile()
+:  let l:lines="all"
+:  py3f $HOME/.vim/scripts/clang-format.py
+:endfunction
+
+" Key binding to apply clang-format
+map <C-b> :call FormatFile()<CR>
 
 " No netrwhist file
 :let g:netrw_dirhistmax = 0
