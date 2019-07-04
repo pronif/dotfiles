@@ -15,7 +15,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'vim-scripts/indentpython.vim'
 " Color scheme
 Plugin 'altercation/vim-colors-solarized'
-
+" File navigation
+Plugin 'scrooloose/nerdtree'
 " All of your Plugins must be added before the following line
 call vundle#end()            
 filetype plugin indent on    " Required for Vundle
@@ -30,6 +31,9 @@ else
   set background=dark
   colorscheme solarized
 endif
+
+" Ctrl-n to toggle file navigation
+map <C-n> :NERDTreeToggle<CR>
 
 " No netrwhist file
 :let g:netrw_dirhistmax = 0
