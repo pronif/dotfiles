@@ -16,3 +16,7 @@ $CMD
 CMD="ln -sf $PWD/vim $HOME/.vim"
 echo "$CMD"
 $CMD
+
+CMD="ln -sf $PWD/tmux.conf $HOME/.tmux.conf"
+echo "$CMD"
+$CMD
