@@ -42,7 +42,7 @@ map <C-n> :NERDTreeToggle<CR>
 :endfunction
 
 " Key binding to apply clang-format
-map <C-b> :call FormatFile()<CR>
+map <C-m> :call FormatFile()<CR>
 
 " No netrwhist file
 :let g:netrw_dirhistmax = 0
