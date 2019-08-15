@@ -79,6 +79,13 @@ set smartcase
 " Search dynamically
 set incsearch
 
+" Global indentation preferences
+set shiftwidth=2
+set expandtab
+set tabstop=2
+" C++ indentation
+autocmd FileType cpp setlocal expandtab tabstop=2 shiftwidth=2
+
 " Add mouse support
 if has('mouse')
   set mouse=a
