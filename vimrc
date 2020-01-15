@@ -17,6 +17,8 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'altercation/vim-colors-solarized'
 " File navigation
 Plugin 'scrooloose/nerdtree'
+" Python formatter
+Plugin 'mindriot101/vim-yapf'
 " All of your Plugins must be added before the following line
 call vundle#end()            
 filetype plugin indent on    " Required for Vundle
@@ -35,10 +37,15 @@ endif
 " Key binding to toggle file navigation
 map <C-n> :NERDTreeToggle<CR>
 
-" Apply clang-format to the whole file
+" Apply formatting to the whole file
 :function FormatFile()
-:  let l:lines="all"
-:  py3f $HOME/.vim/scripts/clang-format.py
+:  if (&ft=='cpp')
+:    let l:lines="all"
+:    py3f $HOME/.vim/scripts/clang-format.py
+:  endif
+:  if (&ft=='python')
+:    :Yapf
+:  endif
 :endfunction
 
 " Key binding to apply clang-format
