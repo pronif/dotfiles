@@ -46,6 +46,9 @@ map <C-n> :NERDTreeToggle<CR>
 :  if (&ft=='python')
 :    :Yapf
 :  endif
+:  if (&ft=='cmake')
+:    :%!cmake-format /dev/stdin
+:  endif
 :endfunction
 
 " Key binding to apply clang-format
