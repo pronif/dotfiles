@@ -49,6 +49,10 @@ map <C-n> :NERDTreeToggle<CR>
 :  if (&ft=='cmake')
 :    :%!cmake-format /dev/stdin
 :  endif
+:  if (&ft=='haskell')
+:    :%!brittany --write-mode=inplace
+:  endif
+
 :endfunction
 
 " Key binding to apply clang-format
