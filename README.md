@@ -3,6 +3,13 @@
 ## About
 
 ### Installing
-```./install.sh```
+Create symlinks from home folder to this repo manually or with `./install.sh`.
 
-This will create symlinks from this repo to home folder.
+
+Clone Vundle for vim plugins
+
+```
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+Launch `vim` and run `:PluginInstall`
