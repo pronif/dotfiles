@@ -1,15 +1,11 @@
 # dotfiles
 
 ## About
+Current dotfiles:
+* .vimrc
+* .tmux.conf
 
-### Installing
-Create symlinks from home folder to this repo manually or with `./install.sh`.
-
-
-Clone Vundle for vim plugins
-
-```
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-```
-
-Launch `vim` and run `:PluginInstall`
+### How to use
+* take inspiration and write your own dotfiles
+* create symlinks manually from $HOME to this repo
+* run `./install.sh` (read it first!) to create the symlinks automatically

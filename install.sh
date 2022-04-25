@@ -13,11 +13,6 @@ CMD="ln -sf $PWD/vimrc $HOME/.vimrc"
 echo "$CMD"
 $CMD
 
-rm $HOME/.vim # Avoid duplication if .vim already exists as symlink
-CMD="ln -sf $PWD/vim $HOME/.vim"
-echo "$CMD"
-$CMD
-
 CMD="ln -sf $PWD/tmux.conf $HOME/.tmux.conf"
 echo "$CMD"
 $CMD
