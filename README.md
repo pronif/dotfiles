@@ -4,7 +4,7 @@
 Current dotfiles:
 * .vimrc
 * .tmux.conf
-# .shell_aliases
+* .shell_aliases
 
 ### How to use
 * take inspiration and write your own dotfiles
@@ -13,4 +13,5 @@ Current dotfiles:
 
 ### Resources
 https://missing.csail.mit.edu/
+
 https://github.com/anishathalye/dotfiles/blob/master/vimrc
