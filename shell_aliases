@@ -1,0 +1,11 @@
+# GIT
+alias gca="git commit -am"
+alias gc="git commit -m"
+alias gp="git pull"
+alias gr="git fetch --all --prune && (git rebase origin/master 2> /dev/null || git rebase origin/main 2> /dev/null)"
+alias grc="git rebase --continue"
+alias grs="git rebase --skip"
+alias gcm="git checkout master 2> /dev/null || git checkout main 2> /dev/null"
+alias gcb="git checkout -b"
+alias gl="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+

@@ -16,3 +16,7 @@ $CMD
 CMD="ln -sf $PWD/tmux.conf $HOME/.tmux.conf"
 echo "$CMD"
 $CMD
+
+CMD="source $PWD/shell_aliases"
+echo "$CMD"
+echo $CMD >> $HOME/.bashrc
